@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="Sistema-Gestion-IglesiaPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>mx.unach.repositorio.jpa.Coro</class>
+    <class>mx.unach.repositorio.jpa.Sacerdote</class>
+    <class>mx.unach.repositorio.jpa.Finanza</class>
+    <class>mx.unach.repositorio.jpa.Servicio</class>
+    <class>mx.unach.repositorio.jpa.Misas</class>
+    <class>mx.unach.repositorio.jpa.Servicios</class>
+    <class>mx.unach.repositorio.jpa.Misa</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/sistemagestioniglesia"/>
+      <property name="javax.persistence.jdbc.user" value="postgres"/>
+      <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="Duran2001"/>
+    </properties>
+  </persistence-unit>
+</persistence>
